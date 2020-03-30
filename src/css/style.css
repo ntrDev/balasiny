@@ -6,7 +6,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{overflow-x: hidden;}
+body{
+    overflow-x: hidden;
+    font-family: "AvenirNextCyr", sans-serif;
+    font-style: normal;
+}
 :root{
     --yellow-color: #DADE55;
     --white-color: #ffffff;
@@ -57,8 +61,6 @@ header{
 }
 a.mnu_item{
     color: var(--white-color);
-    font-family: Avenir Next Cyr;
-    font-style: normal;
     font-weight: 450;
     font-size: 14px;
     line-height: 17px;
@@ -72,9 +74,14 @@ ul>li>a.mnu_item:hover{color: var(--yellow-color);}
     padding: 20px 0 14px 0;
     align-items: center;
 }
+.__header_contact_wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 7%;
+}
 .logo{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 56px;
     line-height: 69px;
@@ -92,6 +99,10 @@ ul>li>a.mnu_item:hover{color: var(--yellow-color);}
     justify-content: center;
     align-items: center;
     border: none;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
 }
 .separator{
     display: block;
@@ -110,8 +121,6 @@ ul>li>a.mnu_item:hover{color: var(--yellow-color);}
     justify-content: space-between;
 }
 a.item_product{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
     font-weight: 450;
     font-size: 14px;
     line-height: 17px;
@@ -119,6 +128,20 @@ a.item_product{
     color: var(--black-color);
 }
 a.item_product:hover{color: var(--green-color);}
+a.basket,a.search{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/basket.svg)center center no-repeat;
+}
+a.search{background: url(../img/icons/search.svg)center center no-repeat;}
+header .email_wrapp, header .city_info_wrapp,header .phone_wrapp{
+    align-items: center;
+    padding: 0;
+}
+
+/* header */
+
 #banner{
     color: var(--white-color);
     width: 100%;
@@ -137,8 +160,7 @@ a.item_product:hover{color: var(--green-color);}
     padding-top: 248px;
 }
 ._banner_name{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 56px;
     line-height: 69px;
@@ -146,8 +168,7 @@ a.item_product:hover{color: var(--green-color);}
     text-transform: uppercase;
 }
 ._banner_descr{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 20px;
     line-height: 25px;
@@ -161,29 +182,35 @@ a.item_product:hover{color: var(--green-color);}
     width: 391px;
     justify-content: space-between;
 }
-/* .slick-prev, .slick-next {
-    
-} */
-.slick-dots{bottom: 15px;}
-.slick-dots li button{
+/* content banner carousel*/
+
+.slider .slick-initialized .slick-slider .slick-dotted .slick-prev, .slick-next {
+
+}
+ul.slick-dots{
+    display: flex;
+    bottom: 25px;
+    justify-content: center;
+}
+.slick-dots li button:before{background-color: var(--white-color);}
+.slick-dots li button:before,button#slick-slide-control00:before,
+button#slick-slide-control01::before,button#slick-slide-control02::before{
+    color: transparent;
+    content: "";
     width: 10px;
     height: 10px;
-    background-color: var(--white-color);
+    opacity: 1;
     border-radius: 50%;
-}
-.slick-dots li.slick-active button:before{
-    background-color: var(--white-color);
-    color: transparent;
-}
+} 
+.slick-dots li.slick-active button::before{background-color: var(--yellow-color);}
 
+/* content banner carousel*/
 ._banner_btn,._banner_btn_categ{
     display: flex;
     width: 215px;
     height: 38px;
     align-items: center;
     justify-content: center;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
     font-weight: 450;
     font-size: 14px;
     line-height: 17px;
@@ -220,9 +247,6 @@ a.item_product:hover{color: var(--green-color);}
     margin-bottom: 32px;
 }
 ._article_name{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     text-align: center;
@@ -243,17 +267,13 @@ a.item_product:hover{color: var(--green-color);}
 ._new_product_info_wr{display: flex;}
 ._new_product_info,._popular_product_info{
     display: flex;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     color: var(--white-color);
 }
 ._popular_product_info{color: var(--black-color);}
 ._new_product_info > span strong,._popular_product_info > span strong{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 32px;
     line-height: 39px;
@@ -308,7 +328,7 @@ a.item_product:hover{color: var(--green-color);}
     background-color: var(--green-color);
 }
 ._banner_product_href,._banner_p_product_href{
-    font-family: Avenir Next Cyr;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-style: normal;
     font-weight: 750;
     font-size: 16px;
@@ -327,7 +347,6 @@ a.item_product:hover{color: var(--green-color);}
     width: 100%;
     height: 195px;
 }
-
 .__card_product{
     display: flex;
     width: 24%;
@@ -350,8 +369,6 @@ a.item_product:hover{color: var(--green-color);}
     height: 40px;
     background-color: var(--yellow-color);
     border-radius: 50%;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -375,7 +392,6 @@ a.item_product:hover{color: var(--green-color);}
     background: url(../img/11.jpg)center center no-repeat;
     margin-top: 44px;
 }
-
 ._card_product_basket{
     display: flex;
     justify-content: center;
@@ -384,7 +400,7 @@ a.item_product:hover{color: var(--green-color);}
     height: 60px;
     background: transparent;
     color: var(--descr-color);
-    font-family: Avenir Next Cyr;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-style: normal;
     font-weight: 750;
     font-size: 16px;
@@ -400,8 +416,7 @@ a.item_product:hover{color: var(--green-color);}
     color: var(--white-color);
 }
 ._card_produvct_name{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 20px;
     line-height: 25px;
@@ -413,8 +428,7 @@ a.item_product:hover{color: var(--green-color);}
     margin: 22px 0 24px 0;
 }
 ._card_product_price{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 18px;
     line-height: 22px;
@@ -443,9 +457,7 @@ a.item_product:hover{color: var(--green-color);}
     text-align: center;
 }
 ._info_banner_text{
-    font-family: Avenir Next Cyr;
     font-style: italic;
-    font-weight: normal;
     font-size: 40px;
     line-height: 49px;
     color: var(--white-color);
@@ -466,9 +478,6 @@ a.item_product:hover{color: var(--green-color);}
     
 }
 ._info_border_name{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     text-align: center;
@@ -476,9 +485,6 @@ a.item_product:hover{color: var(--green-color);}
     text-transform: uppercase;
 }
 ._info_border_descr{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -529,28 +535,21 @@ footer{
     padding-bottom: 33px;
 }
 .ic_email,.ic_address,.ic_phone{
-    background: url(../img/icons/email.svg)no-repeat;
-    width: 20px;
+    background: url(../img/icons/email.svg)center center no-repeat;
+    width: 23px;
     height: 20px;
-    padding-right: 12px;
+    margin-right: 9px;
 }
 .email_descr{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
 }
-.ic_address{background: url(../img/icons/map.svg)no-repeat;}
-.ic_phone{background: url(../img/icons/phone.svg)no-repeat;
-}
+.ic_address{background: url(../img/icons/map.svg)center center no-repeat;}
+.ic_phone{background: url(../img/icons/phone.svg)center center no-repeat;}
 .number_wrapp{
     display: flex;
     width: 100%;
     flex-direction: column;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 32px;
 }
@@ -578,9 +577,6 @@ footer{
 .information,.catalog{width: 20%;}
 .subsribe,.information,.catalog{padding-top: 55px;}
 ._footer_mnu_item{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: var(--white-color);
@@ -590,15 +586,14 @@ footer{
     transition: all 0.5s ease-out;
 }
 ._name_article{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     padding-bottom: 31px;
 }
-input[type=email]{
+input[type="email"]{
     display: flex;
     align-items: center;
     width: 309px;
@@ -608,7 +603,7 @@ input[type=email]{
     padding: 0 0 0 21px;
     margin: 15px 0 23px 0;
 }
-input[type=submit]{
+input[type="submit"]{
     transition: all 0.7s ease-out;
     cursor: pointer;
 }
@@ -667,9 +662,7 @@ input[type=submit]:hover{
 .__info_text,.__info_text_blockquote{
     display: flex;
     width: 100%;
-    font-family: Avenir Next Cyr;
     font-style: italic;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     justify-content: center;
@@ -691,9 +684,6 @@ input[type=submit]:hover{
     display: flex;
     justify-content: center;
     color: var(--black-color);
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     flex-direction: column;
     align-items: center;
 }
@@ -732,8 +722,6 @@ input[type=submit]:hover{
 .benefit__img_3{background: url(../img/benefit3.jpg)center center no-repeat;}
 .benefit__descr{
     width: 88%;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
     font-weight: 450;
     font-size: 14px;
     line-height: 17px;
@@ -763,9 +751,7 @@ input[type=submit]:hover{
     align-items: center;
 }
 ._other_banner_text{
-    font-family: Avenir Next Cyr;
     font-style: italic;
-    font-weight: normal;
     font-size: 40px;
     line-height: 49px;
 }
@@ -777,9 +763,6 @@ input[type=submit]:hover{
     align-items: center;
     background: var(--black-color);
     margin-top: 44px;  
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
@@ -792,9 +775,6 @@ input[type=submit]:hover{
 ._post_name{
     display: flex;
     justify-content: center;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     text-align: center;
@@ -812,7 +792,6 @@ input[type=submit]:hover{
     display: flex;
     width: 100%;
 }
-
 .popular_posts_items{
     display: flex;
     justify-content: space-between;
@@ -844,8 +823,7 @@ input[type=submit]:hover{
 }
 .day{
     display: flex;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 100px;
     line-height: 123px;
@@ -859,8 +837,7 @@ input[type=submit]:hover{
     display: flex;
     width: 100%;
     color: var(--green-color);
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 20px;
     line-height: 25px;
@@ -876,8 +853,7 @@ input[type=submit]:hover{
     position: absolute;
 }
 ._posts_text{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 20px;
     line-height: 25px;
@@ -887,9 +863,6 @@ input[type=submit]:hover{
 }
 ._posts_descr{
     display: flex;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: var(--breadcums-color);
@@ -911,16 +884,11 @@ input[type=submit]:hover{
     margin-right: 1.71%;  
 }
 ._services_name{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     color: var(--breadcums-color);
 }
 ._services_item{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
     font-weight: 450;
     font-size: 14px;
     line-height: 17px;
@@ -929,8 +897,7 @@ input[type=submit]:hover{
 }
 ._services_descr{margin: 24px 0 17px 0;}
 ._services_price_name,._services_descr,._service_suport_text{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 20px;
     line-height: 25px;
@@ -956,17 +923,12 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 ._services_item_name{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     color: var(--breadcums-color);
     margin: 32px 0 24px 0;
 }
 ._services_items_list{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
     font-weight: 450;
     font-size: 14px;
     line-height: 17px;
@@ -975,9 +937,6 @@ input[type=submit]:hover{
     word-break: break-word;
 }
 ._services_items_list_more{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: var(--breadcums-color);
@@ -1067,27 +1026,20 @@ th,td{
     align-items: center;
     width: 130px;
     height: 27px;
-    font-family: Avenir Next Cyr;
     font-style: italic;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: var(--white-color);
     background-color: var(--green-color);
 }
 .__comment_author{
-    font-family: Avenir Next Cyr;
     font-style: italic;
-    font-weight: normal;
     font-size: 20px;
     line-height: 25px;
     color: var(--comment-author-color);
     margin: 36px 0 20px 0;
 }
 .__comment_text{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: var(--descr-color);
@@ -1097,16 +1049,12 @@ th,td{
     display: flex;
     width: 100%;
     margin-bottom: 32px;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     color: var(--breadcums-color);
 }
 ._method_item_name{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 20px;
     line-height: 25px;
@@ -1114,9 +1062,6 @@ th,td{
     margin-bottom: 17px;
 }
 ._method_item_descr{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: var(--black-color);
@@ -1169,8 +1114,6 @@ th,td{
     justify-content: space-around;
 }
 ._gallery_item{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
     font-weight: 450;
     font-size: 14px;
     line-height: 17px;
@@ -1200,10 +1143,7 @@ p._partners_text_wr{
     margin-block-end: 1em;
 }
 ._partners_text_wr{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+     font-size: 16px;
     line-height: 20px;
     color: var(--black-color);
 }
@@ -1271,17 +1211,13 @@ p._partners_text_wr{
     flex-direction: column;
 }
 ._contacts_numbers{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 18px;
     line-height: 32px;
     color: var(--black-color);
 }
 ._contacts_text{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: var(--black-color);
@@ -1321,18 +1257,12 @@ p._partners_text_wr{
 }
 ._contact_form_name{
     width: 100%;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 39px;
     color: var(--breadcums-color);
     text-align: center;
 }
 ._contact_form_descr{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -1359,8 +1289,7 @@ input[type="text"]{
     margin: 16px 0 48px 0;
 }
 label{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
+    font-family: 'AvenirNextCyrBold',sans-serif;
     font-weight: 750;
     font-size: 20px;
     line-height: 25px;
@@ -1382,9 +1311,6 @@ input[type="submit"]._form_btn,._btn_catalog{
     background-color: var(--green-color);
     color: var(--white-color);
     border: none;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
@@ -1410,9 +1336,6 @@ input[type="submit"]._form_btn,._btn_catalog{
     background: url(../img/404.svg)center center no-repeat;
 }
 ._404_descr{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 64px;
     text-align: center;
@@ -1422,9 +1345,6 @@ input[type="submit"]._form_btn,._btn_catalog{
     margin-bottom: 102px;
 }
 ._back_home{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 32px;
     line-height: 64px;
     letter-spacing: 0.02em;
@@ -1443,9 +1363,6 @@ input[type="submit"]._form_btn,._btn_catalog{
     align-items: center;
 }
 ._back_href{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 1px;
@@ -1506,18 +1423,12 @@ input[type="submit"]._form_btn,._btn_catalog{
     background: var(--black-color);
     color: var(--white-color);
     cursor:pointer;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
 }
 ._catalog_item_name_wr_more{height: 85px;}
 ._catalog_item_numbers{
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
@@ -1534,9 +1445,6 @@ input[type="submit"]._form_btn,._btn_catalog{
 ._catalog_text_descr_wrapp{margin: 32px 0 72px 0;}
 ._catalog_text_descr{
     width: 80%;
-    font-family: Avenir Next Cyr;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: var(--breadcums-color);
