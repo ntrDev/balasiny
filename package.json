@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "internet-shop fontans",
   "main": "index.js",
+  "homepage": "https://https://ntrdev.github.io/balasiny",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
@@ -34,6 +35,6 @@
     "normalize.css": "^8.0.1",
     "owl.carousel": "^2.3.4",
     "slick-carousel": "^1.8.1"
-  },
-  "homepage": "https://https://ntrdev.github.io/balasiny"
+  }
+  
 }

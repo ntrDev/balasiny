@@ -161,9 +161,9 @@ a.item_product:hover{color: var(--green-color);}
     width: 391px;
     justify-content: space-between;
 }
-.slick-prev, .slick-next {
+/* .slick-prev, .slick-next {
     
-}
+} */
 .slick-dots{bottom: 15px;}
 .slick-dots li button{
     width: 10px;
