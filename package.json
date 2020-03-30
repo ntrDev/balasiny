@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
-    "deploy" : "npm run build&&gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "dk",
   "license": "ISC",

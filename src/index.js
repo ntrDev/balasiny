@@ -2,6 +2,7 @@
 import * as $ from 'jquery';
 import 'slick-carousel';
 import './css/style.css';
+import '../node_modules/slick-carousel/slick/slick-theme.css';
 // import 'owl.carousel/dist/assets/owl.carousel.css';
 // import 'owl.carousel';
 // import 
