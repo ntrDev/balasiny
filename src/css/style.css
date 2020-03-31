@@ -503,6 +503,31 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
 
 /* section info banner style */
 
+/* section info banner style */
+#gallery_item{
+    margin: 100px 0 91px 0;
+}
+._gallery_items{
+    display: flex;
+}
+._gallery_item_wr{
+    display: flex;
+    width: 240px;
+    height: 240px;
+}
+._gallery_item_1{background: url(../img/gallery_item/19.jpg)center center no-repeat;}
+._gallery_item_2{background: url(../img/gallery_item/20.jpg)center center no-repeat;}
+._gallery_item_3{background: url(../img/gallery_item/21.jpg)center center no-repeat;}
+._gallery_item_4{background: url(../img/gallery_item/22.jpg)center center no-repeat;}
+._gallery_item_5{background: url(../img/gallery_item/23.jpg)center center no-repeat;}
+._gallery_item_6{background: url(../img/gallery_item/24.jpg)center center no-repeat;}
+._gallery_item_7{background: url(../img/gallery_item/25.jpg)center center no-repeat;}
+._gallery_item_8{background: url(../img/gallery_item/26.jpg)center center no-repeat;}
+
+/* section info banner style */
+
+
+
 footer{
     display: flex;
     width: 100%;
@@ -1087,6 +1112,8 @@ th,td{
 ._method_pay_item,
 .__region_describe_item{width: 31%;}
 
+
+
 /* page posts style */
 
 .__posts{
@@ -1143,7 +1170,7 @@ p._partners_text_wr{
     margin-block-end: 1em;
 }
 ._partners_text_wr{
-     font-size: 16px;
+    font-size: 16px;
     line-height: 20px;
     color: var(--black-color);
 }
