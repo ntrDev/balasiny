@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick-theme.css"> -->
-</head>
+<link href="main.css" rel="stylesheet"></head>
 <body>
     <div class="wrapper">
         <header>
@@ -87,13 +87,8 @@
                             <div class="_catalog_nav_mnu">
                                 <div class="_catalog_filter_wrapper">
                                     <span class="_catalog_filter_name">Фильтр</span>
-                                    <input type="range" id="input_price" class="input_price" 
-                                        min="0" max="1400" value="0" step="10" />
-                                    <span class="_price_value_wr">Цена 20 byn - 
-                                        <span id="_price_value">400</span>byn
-                                    </span>
-                                    <input type="range" min="0" max="1400"  value="0" class="slid" id="myRange">
-                                    <p>Value: <span id="value"></span></p>
+                                    <input type="range" id="catalog_price" name="price" 
+                                        min="20" max="500" value="90" step="5" />
                                 </div>
                             </div>
                             <div class="_catalog_catagories_item_wr">
@@ -322,5 +317,5 @@
         </footer>
     </div>
 
-</body>
+<script type="text/javascript" src="bundle.js"></script></body>
 </html>

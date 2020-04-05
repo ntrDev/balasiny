@@ -43,17 +43,17 @@
                         <div class="items_wrapper">
                             <div class="mnu_items">
                                 <ul class="mnu_items_wrapper">
-                                    <li><a href="#" class="item_product">Балясины</a></li>
-                                    <li><a href="#" class="item_product">Крышки и тумбы</a></li>
-                                    <li><a href="#" class="item_product">Скульптура</a></li>
-                                    <li><a href="#" class="item_product">Вазы</a></li>
-                                    <li><a href="#" class="item_product">Светильники</a></li>
-                                    <li><a href="#" class="item_product">Фонтаны</a></li>
-                                    <li><a href="#" class="item_product">Лавки</a></li>
-                                    <li><a href="#" class="item_product">Опалубка</a></li>
-                                    <li><a href="#" class="item_product">Скульптура под бронзу</a></li>
-                                    <li><a href="#" class="item_product">Распродажа</a></li>
-                                    <li><a href="#"></a></li>
+                                    <li><a href="categories.html" class="item_product">Балясины</a></li>
+                                    <li><a href="categories.html" class="item_product">Крышки и тумбы</a></li>
+                                    <li><a href="categories.html" class="item_product">Скульптура</a></li>
+                                    <li><a href="categories.html" class="item_product">Вазы</a></li>
+                                    <li><a href="categories.html" class="item_product">Светильники</a></li>
+                                    <li><a href="categories.html" class="item_product">Фонтаны</a></li>
+                                    <li><a href="categories.html" class="item_product">Лавки</a></li>
+                                    <li><a href="categories.html" class="item_product">Опалубка</a></li>
+                                    <li><a href="categories.html" class="item_product">Скульптура под бронзу</a></li>
+                                    <li><a href="categories.html" class="item_product">Распродажа</a></li>
+                                    <li><a href="basket.html"></a></li>
                                     <li><a href="#"></a></li>
                                 </ul>
                             </div>
@@ -65,7 +65,7 @@
         <section class="_content">
             <div class="content_wrapper">
                 <div class="container">
-                    <h2 class="_section_name">Каталог товаров</h2>
+                    <h2 class="_section_name">Каталог</h2>
                 </div>
             </div>
             <div class="breadcrums">
@@ -82,79 +82,167 @@
             <div class="separator"></div>
             <div class="__catalog center">
                 <div class="container">
-                    <div class="_catalog_item_wrapper">
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_1 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr">
-                                <span class="_catalog_item_name">Балясины</span>
-                                <span class="_catalog_item_numbers">(8)</span>
+                    <div class="_catalog_product_wrapper">
+                        <div class="_catalog_categories_nav_mnu">
+                            <div class="_catalog_nav_mnu">
+                                <div class="_catalog_filter_wrapper">
+                                    <span class="_catalog_filter_name">Фильтр</span>
+                                    <input type="range" id="input_price" class="input_price" 
+                                        min="0" max="1400" value="0" step="10" />
+                                    <span class="_price_value_wr">Цена 20 byn - 
+                                        <span id="_price_value">400</span>byn
+                                    </span>
+                                    <input type="range" min="0" max="1400"  value="0" class="slid" id="myRange">
+                                    <p>Value: <span id="value"></span></p>
+                                </div>
+                            </div>
+                            <div class="_catalog_catagories_item_wr">
+                                <span class="_catalog_categories_name">Категории</span>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="_categories_item_">
+                                            Балясина (8)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="_categories_item_">
+                                            Крышки и тумбы (9)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="_categories_item_">
+                                            Скульптура (56)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="_categories_item_">
+                                            Вазы (18)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="_categories_item_">
+                                            Фонтаны (7)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="_categories_item_">
+                                            Светильники (4)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="bench.html" class="_categories_item_">
+                                            Лавки (1)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="_categories_item_">
+                                            Опалубка (1)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="_categories_item_">
+                                            Скульптура под бронзу (20)
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_2 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr">
-                                <span class="_catalog_item_name">Крышки и тумбы</span>
-                                <span class="_catalog_item_numbers">(9)</span>
+                       
+                        <div class="_new_product_wr">
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_1"></span>
+                                    <span class="_card_produvct_name">Ева — С 102</span>
+                                    <span class="_card_product_price">110.50 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_3 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr">
-                                <span class="_catalog_item_name">Скульптура</span>
-                                <span class="_catalog_item_numbers">(56)</span>
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_1"></span>
+                                    <span class="_card_produvct_name">Ева — С 102</span>
+                                    <span class="_card_product_price">110.50 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_4 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr">
-                                <span class="_catalog_item_name">Вазы</span>
-                                <span class="_catalog_item_numbers">(18)</span>
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_2"></span>
+                                    <span class="_card_produvct_name">Лавка без деревянных 
+                                        брусьев — Л 101
+                                    </span>
+                                    <span class="_card_product_price">136.00 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_5 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr">
-                                <span class="_catalog_item_name">Светильники</span>
-                                <span class="_catalog_item_numbers">(4)</span>
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_2"></span>
+                                    <span class="_card_produvct_name">Лавка без деревянных 
+                                        брусьев — Л 101
+                                    </span>
+                                    <span class="_card_product_price">136.00 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_6 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr">
-                                <span class="_catalog_item_name">Фонтаны</span>
-                                <span class="_catalog_item_numbers">(7)</span>
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_2"></span>
+                                    <span class="_card_produvct_name">Лавка без деревянных 
+                                        брусьев — Л 101
+                                    </span>
+                                    <span class="_card_product_price">136.00 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_7 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr">
-                                <span class="_catalog_item_name">Лавки</span>
-                                <span class="_catalog_item_numbers">(1)</span>
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_2"></span>
+                                    <span class="_card_produvct_name">Лавка без деревянных 
+                                        брусьев — Л 101
+                                    </span>
+                                    <span class="_card_product_price">136.00 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_8 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr">
-                                <span class="_catalog_item_name">Опалубка</span>
-                                <span class="_catalog_item_numbers">(1)</span>
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_2"></span>
+                                    <span class="_card_produvct_name">Лавка без деревянных 
+                                        брусьев — Л 101
+                                    </span>
+                                    <span class="_card_product_price">136.00 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="_catalog_item">
-                            <span class="_catalog_item_9 catalog_item_img"></span>
-                            <div class="_catalog_item_name_wr_more">
-                                <span class="_catalog_item_name">Скульптура под бронзу</span>
-                                <span class="_catalog_item_numbers">(20)</span>
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_1"></span>
+                                    <span class="_card_produvct_name">Ева — С 102</span>
+                                    <span class="_card_product_price">110.50 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
+                            </div>
+                            <div class="__card_product">
+                                <div class="_card_product_wrap">
+                                    <span class="_card_product_icon">NEW</span>
+                                    <span class="_card_product_img_product_1"></span>
+                                    <span class="_card_produvct_name">Ева — С 102</span>
+                                    <span class="_card_product_price">110.50 BYN</span>
+                                    <button class="_card_product_basket">в корзину</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="_catalog_text_descr_wrapp center">
-                        <span class="_catalog_text_descr">Если Вы хотите купить декоративные изделия из бетона в 
-                            Беларуси - звоните по телефонам <strong>8 (033) 699-93-02, 
-                            8 (029) 655-31-36, 8 (029) 350-93-02, 8 (029) 223-63-78</strong> и 
-                            мы изготовим для Вас продукт высокого качества по хорошей 
-                            цене!
-                        </span>
-                    </div>
+                    
                 </div>
             </div>
         </section>

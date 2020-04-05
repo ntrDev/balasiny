@@ -88,6 +88,18 @@ module.exports = {
 			filename: 'catalog.html',
 			template: './catalog.html'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'categories.html',
+			template: './categories.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'bench.html',
+			template: './bench.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'catalog_product_item.html',
+			template: './catalog_product_item.html'
+		}),
 		new CleanWebpackPlugin()
 	]
 };

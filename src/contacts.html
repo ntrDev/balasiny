@@ -104,7 +104,13 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="_contacts_map"></div>
+                        <div id="map">
+                            <div class="_contacts_map">
+                                <!-- <script type="text/javascript" charset="utf-8" 
+                                    async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A48393e165dd809ec38ba2a26466821d3fdb5b9b6bdfce92222b9e05f7d422b66&amp;width=100%155&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
+                                </script> -->
+                            </div>
+                        </div>
                         <div class="_contacts_form_wrapp">
                             <div class="_contact_form">
                                 <span class="_contact_form_name">Свяжитесь со мной</span>
@@ -205,6 +211,17 @@
             </div>
         </footer>
     </div>
-
+    <script>
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: {lat: 53.143572, lng: 26.0006941}
+        });
+        // setMarkers(map);
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx73IMMOUoj2S3ZbAOfuBX8yiVkwyI0B4&callback=initMap">
+    </script>
 </body>
 </html>

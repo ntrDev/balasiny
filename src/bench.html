@@ -65,16 +65,17 @@
         <section class="_content">
             <div class="content_wrapper">
                 <div class="container">
-                    <h2 class="_section_name">Каталог</h2>
+                    <h2 class="_section_name">Каталог товаров</h2>
                 </div>
             </div>
             <div class="breadcrums">
                 <div class="container">
                     <ul class="breadcrums_wrapper">
                         <li><a href="index.html" class="_href_breadcums">Главная&#160; - &#160; </a></li>
+                        <li><a href="catalog.html" class="_href_breadcums">Каталог&#160; - &#160; </a></li>
                         <li>
-                            <a href="404.html" class="_href_breadcums actived">
-                                Каталог
+                            <a href="bench.html" class="_href_breadcums actived">
+                                Лавки
                             </a></li>
                     </ul>
                 </div>
@@ -87,13 +88,8 @@
                             <div class="_catalog_nav_mnu">
                                 <div class="_catalog_filter_wrapper">
                                     <span class="_catalog_filter_name">Фильтр</span>
-                                    <input type="range" id="input_price" class="input_price" 
-                                        min="0" max="1400" value="0" step="10" />
-                                    <span class="_price_value_wr">Цена 20 byn - 
-                                        <span id="_price_value">400</span>byn
-                                    </span>
-                                    <input type="range" min="0" max="1400"  value="0" class="slid" id="myRange">
-                                    <p>Value: <span id="value"></span></p>
+                                    <input type="range" id="catalog_price" name="price" 
+                                        min="0" max="1400" value="0" step="5" />
                                 </div>
                             </div>
                             <div class="_catalog_catagories_item_wr">
@@ -130,7 +126,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="bench.html" class="_categories_item_">
+                                        <a href="#" class="_categories_item_">
                                             Лавки (1)
                                         </a>
                                     </li>
