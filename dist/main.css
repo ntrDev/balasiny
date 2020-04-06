@@ -2022,7 +2022,11 @@ input[type="submit"]._form_btn,._btn_catalog{
 
 
 /* Custom, iPhone Retina */
+
+/*   index page media queries */
+
 @media screen and (min-width : 320px) and (max-width: 479px){
+    .container{padding :0 1%;}
     .container,input[type="email"]{width: 100%;}
     .mnu_items,.separator,.__header_contact_wrapper{display: none}
     .logo_wrapper{
@@ -2075,6 +2079,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     ._new_product_info_wr{margin-left: 20px;}
     ._new_product_wr{align-items: center;}
     .__card_product{width: 95%;}
+    #__info_banner{margin-bottom: 365px;}
     ._info_banner_wrapper{padding-top: 115px;}
     ._info_banner_text{
         font-size: 24px;
@@ -2099,13 +2104,16 @@ input[type="submit"]._form_btn,._btn_catalog{
     }
     .popular_posts_items,._post_item{
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
+    
     .popular_posts_items_wrapper{
         width: 100%;
         align-items: center;
     }
     ._posts_text{margin-top: 25px;}
+    ._posts_text_wr{width: 95%;}
+    ._posts_descr{margin-bottom: 44px;}
     footer{
         height: auto;
         padding-bottom: 20px;
@@ -2124,7 +2132,51 @@ input[type="submit"]._form_btn,._btn_catalog{
         font-size: 16px;
         line-height: 20px;
     }
+    .information,.catalog{width: 100%;}
+
+    /*   index page media queries */
+
+    /*   about page media queries */
+    ._about_banner_info{
+        width: 95%;
+        height: auto;
+        top: 170px;
+        left: 6px;
+    }
+    .__about_info_wrapper{padding: 0.85rem;}
+    ._our_shop{margin-top: 20px;}
+    ._about_text_shop{width: 100%}
+    ._other_banner_text_wrapper{
+        width: 95%;
+    }
+    ._other_banner_text{font-size: 1.45rem;}
+    /*   about page media queries */
     
+    /*   comments page media queries */
+    .__comments_wrapper{flex-direction: column;}
+    .__commments_item{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    /*   comments page media queries */
+    /*   describe page media queries */
+    .__method_describe_item,._method_pay_item,.__region_describe_item{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .__method_describe_item_wr{
+        align-items: center;
+        flex-direction: column;
+    }
+    .__method_pay_wrapper,.__method_pay_wr,._region_describe_wrapper{
+        flex-direction: column;
+    }
+    .__describe_name_item,.__describe_name_item{justify-content: center;}
+    /*   describe page media queries */
+
+    /* ._partners_img_wr{flex-direction: column;} */
+    ._partners_item_wr{width: 100%;}
 }
 
 /*==========  Mobile First Method  ==========*/
