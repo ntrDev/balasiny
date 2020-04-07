@@ -8,3 +8,8 @@
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/AvenirNextCyrBold/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyrBold/AvenirNextCyr-Bold.ttf") format("truetype"); }
+@font-face {
+    font-family: "BalyasinyIcon";
+    font-style: normal;
+    font-weight: 300;
+    src: url("./custom_icons/font/balysiny_fonts.eot?#iefix") format("embedded-opentype"), url("./custom_icons/font/balysiny_fonts.ttf") format("truetype"); }

@@ -1,17 +1,13 @@
 
 import * as $ from 'jquery';
 import 'slick-carousel';
+import './css/custom_icons/css/balysiny_fonts.css';
 import './css/style.css';
 import './css/media.css';
 import '../node_modules/slick-carousel/slick/slick-theme.css';
 import '../node_modules/slick-carousel/slick/slick.css';
 import './img/gallery_item/19.jpg';
-// import 'font-awesome';
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel';
-// import 
-// import './img/services_item/item_1.jpg';
-// require('html-loader!./services.html');
+
 console.log('i');
 // import '../src/about.html';
 
@@ -23,11 +19,13 @@ $('.slider').slick({
     adaptiveHeight: true
 });
 
-$('.slider_gallery').slick({
-    dots: true,
+$('.slider_gal_wr').slick({
+    dots: false,
     infinite: true,
-    speed: 1500
-
+    speed: 1500,
+    adaptiveHeight: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
 });
 
 /// Gogle Maps 
@@ -94,23 +92,23 @@ function initMap() {
 //     range.style.background = color;
 // });
 
-var slid = document.getElementById("myRange");
-var output = document.getElementById("value");
+// var slid = document.getElementById("myRange");
+// var output = document.getElementById("value");
 
-output.innerHTML = slid.value;
+// output.innerHTML = slid.value;
 
-slid.oninput = function() {
-    output.innerHTML = this.value;
-}       
+// slid.oninput = function() {
+//     output.innerHTML = this.value;
+// }       
 
-var start_value = slid.getAttribute("value");
+// var start_value = slid.getAttribute("value");
 
-var x = start_value;
-var color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '% , rgb(214, 214, 214)' + x + '%)';
-slid.style.background = color;
+// var x = start_value;
+// var color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '% , rgb(214, 214, 214)' + x + '%)';
+// slid.style.background = color;
 
-slid.addEventListener("mousemove", function() {
-    x = slid.value;
-    color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '% , rgb(214, 214, 214)' + x + '%)';
-    slid.style.background = color;
-});
+// slid.addEventListener("mousemove", function() {
+//     x = slid.value;
+//     color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '% , rgb(214, 214, 214)' + x + '%)';
+//     slid.style.background = color;
+// });
