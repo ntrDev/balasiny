@@ -35,6 +35,9 @@ li,a{
     justify-content: center;
 }
 .actived{color: var(--green-color)};
+.menu-icon, .menu-icon-cross, .nav_top_mnu {
+    display: none;
+}
 header{
     display: flex;
     padding-bottom: 27px;
@@ -121,6 +124,7 @@ ul>li>a.mnu_item:hover{color: var(--yellow-color);}
     display: flex;
     width: 100%;
     justify-content: space-between;
+    position: relative;
 }
 a.item_product{
     font-weight: 450;
@@ -160,8 +164,8 @@ a.search{background: url(../img/icons/search.svg)center center no-repeat;}
     align-items: center;
     color: var(--white-color);
     position: absolute;
-    right: 104px;
-    bottom: 60px;
+    right: 49px;
+    bottom: 14px;
 }
 header .email_wrapp, header .city_info_wrapp,header .phone_wrapp{
     align-items: center;
@@ -231,8 +235,6 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
 .slider.slick-initialized.slick-slider.slick-dotted{margin-bottom: 0;}
 /* content banner carousel*/
 
-
-
 ._banner_btn,._banner_btn_categ{
     display: flex;
     width: 215px;
@@ -242,7 +244,7 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
     font-weight: 450;
     font-size: 14px;
     line-height: 17px;
-   text-transform: uppercase;
+    text-transform: uppercase;
     color: var(--white-color);
     background-color: var(--black-color);
 }
@@ -264,7 +266,6 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
 .other_info_wrapper{
     display: flex;
     height: inherit;
-    
 }
 .other_info_item{
     display: flex;
@@ -751,6 +752,30 @@ input[type=submit]:hover{
     transition: all 0.7s ease-out;
     font-weight: 650;
 }
+._text_subscribe{
+    width: 79%;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+}
+._company_dev{
+    display: flex;
+    margin-top: 45px;
+}
+._company_dev_text{
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--white-color);
+    margin-right: 25px;
+}
+.footer_logo_company{
+    display: flex;
+    width: 97px;
+    height: 27px;
+    background: url(../img/icons/logo_comp.png)center center no-repeat;
+}
+
+/* footer*/
 .content{display: flex;}
 .content_wrapper{
     display: flex;
@@ -1727,3 +1752,96 @@ input[type="submit"]._form_btn,._btn_catalog{
 }   
 
 /* page catalog style */
+
+
+
+/**/
+
+.menu-icon {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.menu-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--white-color);
+    transform: translateX(-50%) translateY(-50%);
+}
+.menu-icon span::before, .menu-icon span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: var(--white-color);
+    transform: translateY(-6px);
+    transition: transform 0.5s;
+}
+.menu-icon span::after{left: 12px;}
+.menu-icon span::after {transform: translateY(6px);}
+.menu-icon span::before {transform: translateY(-8px);}
+.menu-icon span::after {transform: translateY(8px);}
+.menu-icon-cross {transition: transform 0.5s;}
+.menu-icon-cross span::before,.menu-icon-cross span::after {transform-origin: 50% 50%;}
+.menu-icon-cross span {
+    z-index: 2;
+    transition: background 0.5s, transform 0.5s;
+}
+.menu-icon-cross.is-opened {transform: rotate(180deg);}
+.menu-icon-cross.is-opened span {
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    transition: 0.5s all ease-in;
+    background: transparent;
+    height: 24px;
+}
+.menu-icon-cross.is-opened span::before,.menu-icon-cross.is-opened span::after {
+    transform: translateY(0) rotate(45deg);
+    top: 45%;
+    left: 22%;
+}
+.menu-icon-cross.is-opened span::after {transform: translateY(0) rotate(-45deg);}
+.top_mnu {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2;
+    right: 0;
+    top: 2rem;
+    display: none;
+}
+.top_mnu ul,
+.top_mnu li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.top_mnu ul {
+    text-align: center;
+    -webkit-animation-duration: 0.01s;
+    -moz-animation-duration: 0.01s;
+    animation-duration: 0.01s;
+}
+
+.top_mnu ul a {
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+    height: 60px;
+    padding-top: 25px;
+    outline: none;
+    letter-spacing: 2px;
+}
+.top_mnu ul a:hover {background-color: rgba(255, 255, 255, 0.08);}
