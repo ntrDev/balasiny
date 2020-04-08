@@ -16,7 +16,8 @@ $('.slider').slick({
     infinite: true,
     speed: 1500,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    
 });
 
 $('.slider_gal_wr').slick({
@@ -26,18 +27,46 @@ $('.slider_gal_wr').slick({
     adaptiveHeight: true,
     slidesToShow: 6,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+        
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 });
 
-$(".menu-icon").click(function(e){
+$(".menu_icon").click(function(e){
     e.preventDefault();
-    // $this = $(this);
     if($(this).hasClass("is-opened")){
         $(this).addClass("is-closed").removeClass("is-opened");
     }else{
         $(this).removeClass("is-closed").addClass("is-opened");
     }
 });
-$(".menu-icon-cross").click(function(){
+$(".menu_icon_cross").click(function(){
     if ($(".top_mnu").is(":visible")){
         $(".top_mnu").fadeOut(600);
         $(".top_mnu li a").removeClass("fadeInUp animated");
@@ -55,6 +84,8 @@ function initMap() {
 
     setMarkers(map);
 }
+
+
 
 //// filter price 
 
