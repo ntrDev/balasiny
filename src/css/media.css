@@ -34,19 +34,20 @@
         height: 80px;
         align-items: center;
     }
-    .mnu_item_wrapp,.logo_wrapper{display: none}
     .menu_icon, .menu_icon_cross {
         display: block;
         top: 4%;
     }
-    .mnu_items,.separator,.__header_contact_wrapper, .email_wrapp{display: none}
+    .mnu_items,.separator,.__header_contact_wrapper, .email_wrapp,
+    .separator_gallery,.mnu_item_wrapp,.logo_wrapper{display: none}
     .logo{
         font-size: 36px;
         line-height: 44px;
     }
+    .mnu_icon_wr{position: relative;}
     ._count_product{
-        right: 35px;
-        bottom: 21px;
+        right: -16%;
+        bottom: 45%;
     }
     ._banner_info{padding-top: 41px;}
     ._banner_name{
@@ -66,6 +67,7 @@
     .other_info_descr{
         flex-direction: column;
         padding-bottom: 35px;
+        width: 100%;
     }
     .other_info_item{padding-top: 26px;}
     ._article_name{
@@ -172,9 +174,14 @@
         font-size: 16px;
         line-height: 20px;
     }
+    /* .mnu_icon_wr{position: relative;} */
     .information,.catalog{width: 100%;}
-    button.slick-next.slick-arrow, 
-    button.slick-prev.slick-arrow{display: none;}
+    button.slick-next.slick-arrow,
+    button.slick-prev.slick-arrow{
+        width: 0;
+        height: 0;
+    }
+   
     /*   index page media queries */
 
     /*   about page media queries */
@@ -219,6 +226,55 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    ._section_name{
+        text-align: center;
+        font-size: 26px;
+    }
+    ._contacts_banner{
+        width: 95%;
+        top: 7rem;
+        left: 0.4rem;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+    ._contact_info_item{width:100%}
+    ._contacts_ic_email,._contacts_ic_marker{margin-bottom: 10px;}
+    ._contacts_ic_phone{margin: 0 0 10px 0;}
+    ._contact_info_item{margin-top: 10px;}
+    ._contacts_form_wrapp{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .__services_wrapper{
+        flex-direction: column;
+    }
+    .__services_list{
+        width: 91%;
+        margin-left: 15px;
+        flex-wrap: wrap;
+    }
+    ._services_items_list_more_wr{margin-left: 10px;}
+    ._services_content_wr{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    ._services_text{
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        width: 96%;
+        word-break: break-word;
+    }
+    ._services_price_name{
+        font-size: 15px;
+        word-wrap: break-word;
+    }
+    th, td {font-size: 13px;}
+    ._service_suport_text{margin: 20px 0 10px 0;}
+    .__item_wr{flex-direction: column;}
+    .__item__{width: 100%;}
 }
 
 /*==========  Mobile First Method  ==========*/

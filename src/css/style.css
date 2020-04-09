@@ -1129,24 +1129,24 @@ input[type=submit]:hover{
     transition: 0.4s;
     z-index: 1;    
 }
-._img_1{background: url(../img/services_item/item_1.jpg);}
-._img_2{background: url(../img/services_item/item_2.jpg);}
-._img_3{background: url(../img/services_item/item_3.jpg);}
-._img_4{background: url(../img/services_item/item_4.jpg);}
-._img_5{background: url(../img/services_item/item_5.jpg);}
-._img_6{background: url(../img/services_item/item_6.jpg);}
-._img_7{background: url(../img/services_item/item_7.jpg);}
-._img_8{background: url(../img/services_item/item_8.jpg);}
-._img_9{background: url(../img/services_item/item_9.jpg);}
-._img_10{background: url(../img/services_item/item_10.jpg);}
-._img_11{background: url(../img/services_item/item_11.jpg);}
-._img_12{background: url(../img/services_item/item_12.jpg);}
-._img_13{background: url(../img/services_item/item_13.jpg);}
-._img_14{background: url(../img/services_item/item_14.jpg);}
-._img_15{background: url(../img/services_item/item_15.jpg);}
-._img_16{background: url(../img/services_item/item_16.jpg);}
-._img_17{background: url(../img/services_item/item_17.jpg);}
-._img_18{background: url(../img/services_item/item_18.jpg);}
+._img_1{background: url(../img/services_item/item_1.jpg)center center no-repeat;}
+._img_2{background: url(../img/services_item/item_2.jpg)center center no-repeat;;}
+._img_3{background: url(../img/services_item/item_3.jpg)center center no-repeat;;}
+._img_4{background: url(../img/services_item/item_4.jpg)center center no-repeat;;}
+._img_5{background: url(../img/services_item/item_5.jpg)center center no-repeat;;}
+._img_6{background: url(../img/services_item/item_6.jpg)center center no-repeat;;}
+._img_7{background: url(../img/services_item/item_7.jpg)center center no-repeat;;}
+._img_8{background: url(../img/services_item/item_8.jpg)center center no-repeat;;}
+._img_9{background: url(../img/services_item/item_9.jpg)center center no-repeat;;}
+._img_10{background: url(../img/services_item/item_10.jpg)center center no-repeat;;}
+._img_11{background: url(../img/services_item/item_11.jpg)center center no-repeat;;}
+._img_12{background: url(../img/services_item/item_12.jpg)center center no-repeat;;}
+._img_13{background: url(../img/services_item/item_13.jpg)center center no-repeat;;}
+._img_14{background: url(../img/services_item/item_14.jpg)center center no-repeat;;}
+._img_15{background: url(../img/services_item/item_15.jpg)center center no-repeat;;}
+._img_16{background: url(../img/services_item/item_16.jpg)center center no-repeat;;}
+._img_17{background: url(../img/services_item/item_17.jpg)center center no-repeat;;}
+._img_18{background: url(../img/services_item/item_18.jpg)center center no-repeat;;}
 a.circle{
     display: none;
     justify-content: center;
@@ -1807,6 +1807,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     right: 0;
     top: 4rem;
     display: none;
+    
 }
 .top_mnu ul,.top_mnu li {
     list-style-type: none;
@@ -1820,7 +1821,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     animation-duration: 0.01s;
 }
 .top_mnu ul a {
-    color: #fff;
+    color: var(--breadcums-color);
     display: block;
     text-transform: uppercase;
     font-size: 12px;
