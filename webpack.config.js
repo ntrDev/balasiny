@@ -100,6 +100,42 @@ module.exports = {
 			filename: 'catalog_product_item.html',
 			template: './catalog_product_item.html'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'balyasiny.html',
+			template: './balyasiny.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'bronze_sculpture.html',
+			template: './bronze_sculpture.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'fixtures.html',
+			template: './fixtures.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'formwork.html',
+			template: './formwork.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'fountains.html',
+			template: './fountains.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'pedestals.html',
+			template: './pedestals.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'sales.html',
+			template: './sales.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'sculpture.html',
+			template: './sculpture.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'vases.html',
+			template: './vases.html'
+		}),
 		new CleanWebpackPlugin()
 	]
 };

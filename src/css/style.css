@@ -24,6 +24,7 @@ body{
     --comment-author-color: #171F21;
     --input-color: #F9F9F9;
     --header-icon-color: #9D9D9D;
+    --rose-color: #FFD19F;
 }
 li,a{
     text-decoration: none;
@@ -35,6 +36,7 @@ li,a{
     justify-content: center;
 }
 .actived{color: var(--green-color)};
+._card_product_icon .rose{background: var(--rose-color);}
 .menu_icon.menu_icon_cross.is-closed,.menu_icon.menu_icon_cross.is-closed {display: none;}
 header{
     display: flex;
@@ -187,6 +189,7 @@ header .email_wrapp, header .city_info_wrapp,header .phone_wrapp{
     width: 100%;
     height: 642px;
     background: url(../img/banner.jpg)no-repeat center center;
+    background-size: cover;
 }
 ._banner_info{
     display: flex;
@@ -426,6 +429,7 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
     background-color: var(--white-color);
     position: relative;
     margin-bottom: 32px;
+    border: 1px solid var(--banner-border-color);
 }
 ._card_product_wrap{
     display: flex;
@@ -433,13 +437,13 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
     flex-direction: column;
     align-items: center;
 }
-._card_product_icon{
+._card_product_icon,._card_product_rose{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--yellow-color);
+    background: var(--yellow-color);
     border-radius: 50%;
     font-weight: 600;
     font-size: 14px;
@@ -450,11 +454,13 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
     top: 16px;
     right: 16px;
 }
+._card_product_rose{background-color: var(--rose-color);}
 ._card_product_img_product_1{
     display: flex;
     width: 92px;
     height: 250px;
     background: url(../img/10.jpg)center center no-repeat;
+    background-size: cover;
     margin-top: 25px;
 }
 ._card_product_img_product_2{
@@ -462,6 +468,7 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
     width: 252px;
     height: 218px;
     background: url(../img/11.jpg)center center no-repeat;
+    background-size: cover;
     margin-top: 44px;
 }
 ._card_product_basket{
@@ -1574,6 +1581,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     display: flex;
     width: inherit;
     height: inherit;
+    background-size: cover;
 }
 ._catalog_item_1{background: url(../img/9.jpg)center center no-repeat;}
 ._catalog_item_2{background: url(../img/1.jpg)center center no-repeat;}
@@ -1741,8 +1749,6 @@ input[type="submit"]._form_btn,._btn_catalog{
 
 /* page catalog style */
 
-
-
 /* header adaptive menu style css*/
 .menu_icon {
     position: absolute;
@@ -1752,6 +1758,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     height: 24px;
     cursor: pointer;
     display: none;
+    z-index: 1;
 }
 .menu_icon span {
     position: absolute;
