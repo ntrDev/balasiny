@@ -31,14 +31,23 @@ $('.slider_gal_wr').slick({
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                infinite: true
+                // dots: true
             }
         },
         {
-            breakpoint: 640,
+            breakpoint: 975,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+                infinite: true
+                
+            }
+        },
+        {
+            breakpoint: 732,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,

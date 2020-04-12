@@ -1771,7 +1771,7 @@ p._partners_text_wr{
     display: flex;
     width: 183px;
     height: 52px;
-    background: var(--grown-color) url(21ef1fbe2f4a08576377c4a5263220f2.jpg) center center no-repeat;
+    background: url(21ef1fbe2f4a08576377c4a5263220f2.jpg) center center no-repeat;
 }
 
 /* page partners style */
@@ -2327,13 +2327,26 @@ input[type="submit"]._form_btn,._btn_catalog{
 
 
 /* Custom, iPhone Retina */
-
-/*   index page media queries */
-@media screen and (min-width : 320px) and (max-width: 639px){
+@media screen and (min-width : 320px) and (max-width: 1200px){
     .container{
-        width: 98%;
+        width: 100%;
         padding: 0 1%;
     }
+    ._our_benefits_wrapper,.benefit__descr,._about_text_shop{width: 100%;}
+    .__commments_item{margin-bottom: 40px;}
+}
+
+@media screen and (min-width : 480px) and (max-width: 1200px){
+    .benefit__item{width: 32%;}
+    .benefit__img_1, .benefit__img_2, .benefit__img_3{
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+/*   index page media queries */
+@media screen and (min-width : 320px) and (max-width: 767px){
+  
     input[type="email"],._top_mnu_wr,
     .top_mnu .number_wrapp, .top_mnu .email_descr{width: 100%;}
     header{padding: 0;}
@@ -2366,14 +2379,11 @@ input[type="submit"]._form_btn,._btn_catalog{
     }
     .other_info{ height: auto;}
     .other_info_descr{
-        flex-direction: column;
         padding-bottom: 35px;
         width: 100%;
     }
     ._article_name{
         padding-top: 50px;
-        font-size: 24px;
-        line-height: 29px;
         letter-spacing: 0.02em;
     }
     #categories ._article_name{padding: 64px 0 24px 0;}
@@ -2383,7 +2393,9 @@ input[type="submit"]._form_btn,._btn_catalog{
         flex-direction: column-reverse;
     }
     .figure_new{display: none;}
-    ._popular_product_info > span strong,._popular_product_info{
+    .__banner_new_product, .__banner_popular_product,.__card_product{width: 48%}
+    ._popular_product_info > span strong,._popular_product_info,._info_banner_text,
+    ._post_name,._new_product_info,._article_name{
         font-size: 24px;
         line-height: 29px;
     }
@@ -2401,35 +2413,20 @@ input[type="submit"]._form_btn,._btn_catalog{
     }
     ._banner_popular_product_wrapp ._banner_product_href_wr{margin-top: 36px;}
     ._new_product_info{
-        font-size: 24px;
-        line-height: 29px;
         padding-top: 150px;
         width: 100%;
         z-index: 1;
     }
     #__info_banner{margin-bottom: 365px;}
-    ._info_banner_text{
-        font-size: 24px;
-        line-height: 29px;
-    }
+    
     ._info_banner_border{height: 624px;}
-    ._our_benefits_wrapper{
-        width: 95%;
-        flex-direction: column;
-    }
-    .benefit__item{width: 100%;}
     .benefit__descr{margin: 24px 0 50px 0;}
     #__popular_posts{
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    ._post_name{
-        font-size: 24px;
-        line-height: 29px;
-        margin: 107px 0 37px 0;
-    }
-    .popular_posts_items,._post_item{flex-direction: column;}
+    ._post_name{margin: 107px 0 37px 0;}
     .popular_posts_items_wrapper{
         width: 100%;
         align-items: center;
@@ -2479,11 +2476,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     /*   about page media queries */
 
     /*   comments page media queries */
-    .__comments_wrapper{flex-direction: column;}
-    .__commments_item{
-        width: 95%;
-        margin-bottom: 40px;
-    }
+    
     /*   comments page media queries */
     /*   describe page media queries */
     .__method_describe_item,._method_pay_item,.__region_describe_item{
@@ -2568,6 +2561,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     ._card_product_basket:hover{background: var(--green-color);}
     ._card_product_img_product_2{width: 13rem;}
 }
+
 @media screen and (min-width : 320px) and (max-width: 479px){
     
     .top_mnu .container{padding: 0 3.75% 0 7.19%}
@@ -2589,7 +2583,8 @@ input[type="submit"]._form_btn,._btn_catalog{
         font-size: 16px;
         line-height: 20px;
     }
-    
+    .other_info_descr,.popular_posts_items,._post_item{flex-direction: column;}
+    ._banner_popular_product_wrapp ._banner_product_href_wr{margin-left: 2.5rem;}
     ._banner_descr {margin: 37px 0;}
     ._banner_button_wrapper{
         width: 100%;
@@ -2601,10 +2596,14 @@ input[type="submit"]._form_btn,._btn_catalog{
     
     .other_info_item{padding-top: 26px;}
     
+    ._our_benefits_wrapper,.benefit__item{
+        width: 100%;
+        flex-direction: column;
+    }
     ._catalog_item_wrapper{justify-content: center;}
     ._catalog_text_descr{width: 100%;}
     ._new_product_wr{flex-direction: column;}
-    .__banner_new_product, .__banner_popular_product{width: 100%;}
+    .__banner_new_product, .__banner_popular_product,._partners_item_wr{width: 100%;}
     .figure{position: absolute;}
     
     .__banner_popular_product ._new_product_info_wr{margin-left: 0;}
@@ -2613,18 +2612,23 @@ input[type="submit"]._form_btn,._btn_catalog{
         top: -2.5%;
         left: 39%;
     }
-    
     ._banner_product_href_wr{margin-top: 120px;}
     ._new_product_info_wr{margin-left: 20px;}
     ._new_product_wr{align-items: center;}
     .__card_product{width: 95%;}
     ._info_banner_wrapper{padding-top: 115px;}
+    .__comments_wrapper{flex-direction: column;}
+    .__commments_item{
+        width: 100%;
+        margin-bottom: 40px;
+    }
     .mnu_icon{
         width: 98%;
         padding-left: 2.5rem;
         justify-content: space-between;
         margin-left: 0;
     }
+    
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -2655,8 +2659,8 @@ input[type="submit"]._form_btn,._btn_catalog{
     }
     .__banner_popular_product ._new_product_info_wr{margin-left: 0;}
     ._popular_product_img{
-        top: 0;
-        left: 105px;
+        top: -2%;
+        left: 5%;
     }
     ._banner_separator_href{width: 55px;}
     ._banner_product_href_wr{
@@ -2676,8 +2680,7 @@ input[type="submit"]._form_btn,._btn_catalog{
         flex-direction: none;
         align-items: center;
     }
-    .__card_product{width: 48%;}
-    
+    .popular_posts_items,._post_item{flex-direction: column;}
     ._info_banner_border_wrapper{padding-top: 10px;}
     .mnu_icon{
         width: 100%;
@@ -2685,6 +2688,15 @@ input[type="submit"]._form_btn,._btn_catalog{
         justify-content: space-between;
         margin-left: 0;
     }
+    ._banner_popular_product_text_wr{padding-left: 10px;}
+    ._banner_popular_product_wrapp ._banner_product_href_wr,
+    ._banner_popular_product_text_wr{width: 100%;}
+    ._popular_product_info{
+        font-size: 20px;
+        padding-top: 55px;
+    }
+    ._banner_popular_product_wrapp ._banner_product_href_wr{justify-content: space-around;}
+    .__commments_item,._partners_item_wr{width: 48%;}
 }
 
 @media screen and (min-width : 480px) and (max-width: 545px){
@@ -2695,8 +2707,12 @@ input[type="submit"]._form_btn,._btn_catalog{
 /* Extra Small Devices, Phones */
 
 @media screen and (min-width : 640px) and (max-width: 767px){
-	
-	
+    ._catalog_item{width: 31%;}
+    .catalog_item_img,._catalog_text_descr,.other_info_descr{width: 100%;}
+    ._catalog_item span._catalog_item_name:nth-child(9){font-size: 17px;}
+    .other_info_descr{flex-direction: none;}
+    ._post_item{flex-direction: column;}
+    ._partners_item_wr{width: 31%;}
 }
 @media screen and (min-width : 666px) and (max-width: 767px) {
 	
@@ -2704,8 +2720,9 @@ input[type="submit"]._form_btn,._btn_catalog{
 }
 /* Small Devices, Tablets */
 @media screen and (min-width : 768px) and (max-width: 991px) {
-	
-
+    .__card_product{width: 32%;}
+    ._card_product_img_product_2{width: 12rem;}
+    ._partners_item_wr{width: 24%;}
 }
 
 /* Medium Devices, Desktops */

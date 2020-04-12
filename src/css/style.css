@@ -1341,7 +1341,7 @@ p._partners_text_wr{
     display: flex;
     width: 183px;
     height: 52px;
-    background: var(--grown-color) url(../img/partners.jpg) center center no-repeat;
+    background: url(../img/partners.jpg) center center no-repeat;
 }
 
 /* page partners style */
