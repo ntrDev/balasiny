@@ -1581,7 +1581,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     display: flex;
     width: inherit;
     height: inherit;
-    background-size: cover;
+    
 }
 ._catalog_item_1{background: url(../img/9.jpg)center center no-repeat;}
 ._catalog_item_2{background: url(../img/1.jpg)center center no-repeat;}
