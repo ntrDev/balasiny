@@ -1780,8 +1780,8 @@ p._partners_text_wr{
 
 #map{
     display: block;
-    width: 500px;
-    height: 400px;
+    width: 640px;
+    height: 640px;
 }
 .__contacts{
     display: flex;
@@ -1883,6 +1883,7 @@ p._partners_text_wr{
     flex-direction: column;
     margin-bottom: 109px;
 }
+._contact_info_form_wr{display: flex}
 form{
     display: flex;
     flex-direction: column;
@@ -2298,6 +2299,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     margin-left: 63px;
     position: relative;
     justify-content: space-around;
+    display: none;
 }
 
 /* header adaptive menu style css*/
@@ -2556,7 +2558,8 @@ input[type="submit"]._form_btn,._btn_catalog{
     .__catalog ._new_product_wr{
         margin-left: 0;
         margin-top: 30px;
-    }.__catalog .__card_product{width: 100%;}
+    }
+    
     /* bench*/
     ._card_product_basket:hover{background: var(--green-color);}
     ._card_product_img_product_2{width: 13rem;}
@@ -2602,7 +2605,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     }
     ._catalog_item_wrapper{justify-content: center;}
     ._catalog_text_descr{width: 100%;}
-    ._new_product_wr{flex-direction: column;}
+    
     .__banner_new_product, .__banner_popular_product,._partners_item_wr{width: 100%;}
     .figure{position: absolute;}
     
@@ -2628,7 +2631,21 @@ input[type="submit"]._form_btn,._btn_catalog{
         justify-content: space-between;
         margin-left: 0;
     }
+    ._card_product_icon{}
+}
+@media screen and (min-width : 320px) and (max-width: 449px){
+    ._new_product_wr{flex-direction: column;}
+    .__catalog .__card_product{width: 100%;}
     
+}
+
+@media screen and (min-width : 450px) and (max-width: 479px){
+    .__catalog ._new_product_wr{width: 100%}
+   
+    ._card_product_img_product_2{width: 12rem;}
+}
+@media screen and (min-width : 450px) and (max-width: 730px){
+    .__catalog .__card_product{width: 48%;}
 }
 
 /*==========  Mobile First Method  ==========*/
@@ -2698,8 +2715,16 @@ input[type="submit"]._form_btn,._btn_catalog{
     ._banner_popular_product_wrapp ._banner_product_href_wr{justify-content: space-around;}
     .__commments_item,._partners_item_wr{width: 48%;}
 }
-
-@media screen and (min-width : 480px) and (max-width: 545px){
+@media screen and (min-width : 434px) and (max-width: 479px){
+	._info_banner_border{height: 500px;}
+	
+}
+@media screen and (min-width : 480px) and (max-width: 749px){
+    ._info_banner_border{height: 434px;}
+    #__info_banner{margin-bottom: 0;}
+	
+}
+@media screen and (min-width : 480px) and (max-width: 533px){
 	._card_product_img_product_2{width: 11.5rem;}
 	
 }
@@ -2713,18 +2738,71 @@ input[type="submit"]._form_btn,._btn_catalog{
     .other_info_descr{flex-direction: none;}
     ._post_item{flex-direction: column;}
     ._partners_item_wr{width: 31%;}
+    ._popular_product_img{
+        top: -4%;
+        left: 47%;
+    }
 }
 @media screen and (min-width : 666px) and (max-width: 767px) {
 	
 
 }
+@media screen and (min-width : 666px) and (max-width: 767px) {
+	
+
+}
+
+@media screen and (min-width : 731px) and (max-width: 767px) {
+    ._card_product_img_product_2{width: 12rem}
+}
+@media screen and (min-width : 749px) and (max-width: 991px) {
+	._info_banner_border{
+        height: 434px;
+        margin-bottom: 200px;
+    }
+    #__info_banner{margin-bottom: 0;}
+
+}
+
 /* Small Devices, Tablets */
 @media screen and (min-width : 768px) and (max-width: 991px) {
     .__card_product{width: 32%;}
     ._card_product_img_product_2{width: 12rem;}
     ._partners_item_wr{width: 24%;}
+    ._popular_product_img{
+        top: 0;
+        left: 43%;
+    }
+    .figure_new{z-index: -1;}
+    ._card_product_img_product_2{width: 13rem;}
+    ._contacts_banner{
+        width: 90%;
+        top: 14%;
+        left: 5%;
+    }
+    ._contact_info_form_wr{
+        display: flex;
+        justify-content: space-around;
+    }
+    #map{width: 48%;}
+    input[type="text"],textarea{width: 95%;}
+    .__catalog ._new_product_wr{margin-left: 10px;}
+    .__catalog .__card_product{width: 48%;}
+    ._card_product_img_product_2{width: 12rem;}
 }
-
+@media screen and (min-width : 865px) and (max-width: 991px){
+    ._card_product_img_product_2{width: 13rem;}
+}
+@media screen and (min-width : 819px) and (max-width: 1200px){
+    ._info_banner_border{
+        height: 365px;
+        margin-bottom: 200px;
+    }
+}
+@media screen and (min-width : 992px) and (max-width: 1051px){
+    .__catalog .__card_product{width: 32%;}
+    ._card_product_img_product_2{width: 11.5rem;}
+}
 /* Medium Devices, Desktops */
 
 

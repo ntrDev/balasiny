@@ -1350,8 +1350,8 @@ p._partners_text_wr{
 
 #map{
     display: block;
-    width: 500px;
-    height: 400px;
+    width: 640px;
+    height: 640px;
 }
 .__contacts{
     display: flex;
@@ -1453,6 +1453,7 @@ p._partners_text_wr{
     flex-direction: column;
     margin-bottom: 109px;
 }
+._contact_info_form_wr{display: flex}
 form{
     display: flex;
     flex-direction: column;
@@ -1868,6 +1869,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     margin-left: 63px;
     position: relative;
     justify-content: space-around;
+    display: none;
 }
 
 /* header adaptive menu style css*/
