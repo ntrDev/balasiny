@@ -97,6 +97,71 @@ function initMap() {
 }
 
 
+////////////////// decrement & incremetn
+
+let number = 1;
+let btnInc = document.getElementById('increment');
+let btnDec = document.getElementById('decrement');
+let countNum = document.getElementById('_count_num');
+
+btnInc.addEventListener('click', function () {
+    countNum.textContent = number++;
+});
+
+btnDec.addEventListener('click', function () {
+    countNum.textContent = number--;
+});
+// $("._count_sym").on("click", function() {
+
+//     var $button = $(this);
+//     var oldValue = this.parent().find("span").val();
+  
+//     if ($button.text() == "+") {
+//         var newVal = parseFloat(oldValue) + 1;
+//       } else {
+//      // Don't allow decrementing below zero
+//       if (oldValue > 0) {
+//         var newVal = parseFloat(oldValue) - 1;
+//       } else {
+//         newVal = 0;
+//       }
+//     }
+  
+//     $button.parent().find("span").val(newVal);
+  
+//   });
+// $("._count_sym").on("click", function() {
+
+//     let $button = $(this);
+//     let oldValue = $button.parent().find("span").val();
+  
+//     if ($button.text() == "+") {
+//         let newVal = parseFloat(oldValue) + 1;
+//       } else {
+//      // Don't allow decrementing below zero
+//       if (oldValue > 0) {
+//         let newVal = parseFloat(oldValue) - 1;
+//       } else {
+//         newVal = 0;
+//       }
+//     }
+  
+//     $button.parent().find("span").val(newVal);
+  
+//   });
+// let countNum = document.getElementById('#_count_num');
+
+// btnInc.addEventListener('click',() =>{
+//     countNum.value = parseInt(countNum.value) + 1;
+// });
+
+// btnDec.addEventListener('click',() =>{
+//     countNum.value = parseInt(countNum.value) - 1;
+// });
+// countNum.addEventListener('click', () =>{
+//     countNum.value = parseInt(countNum.value) + 1;
+// });
+
 
 //// filter price 
 

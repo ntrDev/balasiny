@@ -136,6 +136,10 @@ module.exports = {
 			filename: 'vases.html',
 			template: './vases.html'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'categories_product_item.html',
+			template: './categories_product_item.html'
+		}),
 		new CleanWebpackPlugin()
 	]
 };
