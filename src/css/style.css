@@ -1684,11 +1684,7 @@ input[type="submit"]._form_btn,._btn_catalog{
     color: var(--descr-color);
     padding: 0 0 0 8px;
 }
-._categories_item_:hover{
-    font-weight: 450;
-    transition: 0.3s all ease-in-out;
-    color: var(--green-color);
-}
+
 .__catalog .__card_product{width: 32%;}
 .__catalog ._new_product_wr{margin-left: 48px;}
 .__catalog ._card_product_basket{background-color: var(--banner-border-color);}

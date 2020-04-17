@@ -145,12 +145,12 @@
         font-size: 16px;
         line-height: 20px;
     }
-    
-    button.slick-next.slick-arrow,
-    button.slick-prev.slick-arrow{
-        width: 0;
-        height: 0;
+    .mnu_icon_wrapper{
+        display: flex;
+        justify-content: space-around;
+        width: 40.65%;
     }
+    
     /*   index page media queries */
 
     /*   about page media queries */
@@ -383,7 +383,16 @@
         right: -16%;
         bottom: 45%;
     }
-
+    button.slick-next.slick-arrow,
+    button.slick-prev.slick-arrow{
+        width: 0;
+        height: 0;
+    }
+    .mnu_icon_number,.mnu_icon_address,header .city_info_wrapp{display: none}
+    .mnu_icon_wrapper{
+        display:flex;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (min-width : 450px) and (max-width: 479px){
@@ -472,6 +481,7 @@
         margin: 20px 0;
     }
     ._company_dev{margin-top: 0px;}
+    .mnu_icon_wrapper{width: 30.65%;}
 }
 @media screen and (min-width : 434px) and (max-width: 479px){
 	._info_banner_border{height: 500px;}
@@ -480,10 +490,19 @@
 @media screen and (min-width : 480px) and (max-width: 749px){
     ._info_banner_border{height: 434px;}
     #__info_banner{margin-bottom: 0;}
-	
+	._banner_name{padding-top: 89px;}
+    ._banner_descr{font-size: 18px;}
 }
 @media screen and (min-width : 480px) and (max-width: 533px){
 	._card_product_img_product_2{width: 11.5rem;}
+	
+}
+@media screen and (min-width : 480px) and (max-width: 1199px){
+	._banner_name{
+        font-size: 48px;
+        line-height: 59px;
+    }
+    
 	
 }
 
@@ -501,12 +520,14 @@
         left: 47%;
     }
     ._company_dev{margin-top: 5%;}
+    
 }
 @media screen and (min-width : 640px) and (max-width: 992px){
     .footer_logo_info,.information,.subsribe{width: 48%}
     .information{padding-top: 3%;}
     .information .footer_mnu_item_wrapp{padding-top: 15px;}
     input[type="email"]{width: 89%;}
+    .mnu_icon_wrapper{width: 22.2%;}
 }
 @media screen and (min-width : 666px) and (max-width: 767px) {
 	
@@ -526,6 +547,8 @@
         margin-bottom: 200px;
     }
     #__info_banner{margin-bottom: 0;}
+    ._banner_name{padding-top: 204px;}
+    ._banner_info{padding-top: 0;}
     /* .footer_info_wrapp{margin-left: 0;} */
 }
 
@@ -569,6 +592,7 @@
         height: auto;
         padding-bottom: 20px;
     }
+    
 }
 @media screen and (min-width : 865px) and (max-width: 991px){
     ._card_product_img_product_2{width: 13rem;}
