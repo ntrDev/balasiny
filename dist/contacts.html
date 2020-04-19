@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корзина</title>
+    <title>Контакты</title>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
+<link href="main.css" rel="stylesheet"></head>
 <body>
     <div class="wrapper">
         <header>
@@ -169,85 +169,71 @@
         <section class="_content">
             <div class="content_wrapper">
                 <div class="container">
-                    <h2 class="_section_name">Корзина</h2>
+                    <h2 class="_section_name">Контакты</h2>
                 </div>
             </div>
             <div class="breadcrums">
                 <div class="container">
                     <ul class="breadcrums_wrapper">
                         <li><a href="index.html" class="_href_breadcums">Главная&#160; - &#160; </a></li>
-                        <li><a href="basket.html" class="_href_breadcums actived">Корзина&#160; - &#160; </a></li>
+                        <li>
+                            <a href="contacts.html" class="_href_breadcums actived">
+                                Контакты
+                            </a></li>
                     </ul>
                 </div>
             </div>
             <div class="separator"></div>
-            <div class="__basket center">
+            <div class="__contacts">
                 <div class="container">
-                    <div class="_basket_text_info">
-                        <span class="_product_item_article_name">товары в корзине</span>
-                    </div>
-                    <div class="_basket_item_product" id="basket_item1">
-                        <div class="_basket_item_product_wr">
-                            <span class="_item_product_img_wr">
-                                <span class="_item_product_img"></span>
-                            </span>
-                            <div class="_item_product_wr">
-                                <span class="_item_product_name">Лавка без деревянных 
-                                    брусьев — Л 101
-                                </span>
-                                <span class="_item_product_abr">Код: Л 101</span>
+                    <div class="__contacts_wrapp">
+                        <div class="_contacts_img_wrapp">
+                            <span class="_contacts_img"></span>
+                        </div>
+                        <div class="_contacts_banner">
+                            <div class="_contact_info_item">
+                                <span class="_contacts_ic_email"></span>
+                                <span class="_contacts_text">Vanickaya_anasta@mail.ru</span>
                             </div>
-                        </div>
-                        <div class="_item_product_count" >
-                            <span class="_item_product_price">136 BYN</span>
-                            <div class="_item_product_count_wr">
-                                <button class="_count_sym" id="decrement1">-</button>
-                                <span class="_count_number" id="_count_num1">1</span>
-                                <button class="_count_sym" id="increment1">+</button>
+                            <div class="_contact_info_item">
+                                <span class="_contacts_ic_phone"></span>
+                                <span class="_contacts_numbers">+375 (29) 111-32-63</span>
+                                <span class="_contacts_numbers">+375 (29) 111-32-63</span>
+                                <span class="_contacts_numbers">+375 (29) 111-32-63</span>
                             </div>
-                            <span class="_other_price"><strong>136</strong> BYN</span>
-                            <button class="_btn_item_product_delete" id="delete_btn1">x</button>
-                        </div>
-                        
-                    </div>
-                    <div class="_basket_item_product" id="basket_item2">
-                        <div class="_basket_item_product_wr">
-                            <span class="_item_product_img_wr">
-                                <span class="_item_product_img"></span>
-                            </span>
-                            <div class="_item_product_wr">
-                                <span class="_item_product_name">Лавка без деревянных 
-                                    брусьев — Л 101 (под бронзу)
-                                </span>
-                                <span class="_item_product_abr">Код: Л 101</span>
-                            </div>
-                        </div>
-                        <div class="_item_product_count">
-                            <span class="_item_product_price">163.20 BYN</span>
-                            <div class="_item_product_count_wr">
-                                <button class="_count_sym" id="decrement2">-</button>
-                                <span class="_count_number" id="_count_num2">1</span>
-                                <button class="_count_sym" id="increment2">+</button>
-                            </div>
-                            <span class="_other_price"><strong>163.20</strong> BYN</span>
-                            <button class="_btn_item_product_delete" id="delete_btn2">x</button>
-                        </div>
-                    </div>
-                    <div class="_basket_nav_element">
-                        <div class="_basket_back_href_wr">
-                            <a href="categories.html" class="_basket_back_href">
-                                вернуться к покупкам
-                            </a>
-                        </div>
-                        <div class="_basket_total_price">
-                            <div class="_basket_total_price_text_wr">
-                                <span class="_total_price_text">Общая сумма заказа:</span>
-                                <span class="_total_price_num">
-                                    <strong>224.70</strong> BYN
+                            <div class="_contact_info_item">
+                                <span class="_contacts_ic_marker"></span>
+                                <span class="_contacts_text"> г. Барановичи, 
+                                    ул. Фрунзе дом 47
                                 </span>
                             </div>
-                            <div class="_order_btn_wr">
-                                <a href="order.html" class="_order_btn btn">оформить заказ</a>
+                        </div>
+                        <div class="_contact_info_form_wr">
+                            <div id="map">
+                                <div class="_contacts_map">
+                                    <!-- <script type="text/javascript" charset="utf-8" 
+                                        async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A48393e165dd809ec38ba2a26466821d3fdb5b9b6bdfce92222b9e05f7d422b66&amp;width=100%155&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
+                                    </script> -->
+                                </div>
+                            </div>
+                            <div class="_contacts_form_wrapp">
+                                <div class="_contact_form">
+                                    <span class="_contact_form_name">Свяжитесь со мной</span>
+                                    <span class="_contact_form_descr">Текст по способу доставки. нашим специалистом по 
+                                        телефону. Специалист бригады может выехать к Вам на 
+                                        объект для обмерки и подсчета стоимости работ, но чаще 
+                                        всего мы используем
+                                    </span>
+                                    <form>
+                                        <label for="name">Ваше имя*</label>
+                                        <input type="text" id="name class="name" />
+                                        <label for="phone">Ваше телефон*</label>
+                                        <input type="text" class="phone" id="phone"/>
+                                        <label for="message">Ваше сообщение</label>
+                                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                        <input type="submit" class="_form_btn" placeholder="Отправить" />
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -333,6 +319,6 @@
             </div>
         </footer>
     </div>
-
-</body>
+    
+<script type="text/javascript" src="bundle.js"></script></body>
 </html>

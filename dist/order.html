@@ -10,7 +10,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
+<link href="main.css" rel="stylesheet"></head>
 <body>
     <div class="wrapper">
         <header>
@@ -184,32 +184,61 @@
             <div class="__basket center">
                 <div class="container">
                     <div class="_basket_text_info">
-                        <span class="_product_item_article_name">товары в корзине</span>
+                        <span class="_product_item_article_name">Оформление заказа</span>
                     </div>
-                    <div class="_basket_item_product" id="basket_item1">
-                        <div class="_basket_item_product_wr">
-                            <span class="_item_product_img_wr">
-                                <span class="_item_product_img"></span>
-                            </span>
-                            <div class="_item_product_wr">
-                                <span class="_item_product_name">Лавка без деревянных 
-                                    брусьев — Л 101
-                                </span>
-                                <span class="_item_product_abr">Код: Л 101</span>
+                    <form >
+                        <div class="_person_data_wr">
+                            <input type="text" placeholder="Ф.И.О. *">
+                            <input type="text" placeholder="Телефон *">
+                            <input type="text" placeholder="Улица *">
+                            <input type="text" placeholder="E-mail">
+                            <input type="text" placeholder="Город *">
+                            <input type="text" placeholder="№ дома *">
+                            <input type="text" placeholder="Корпус">
+                            <input type="text" placeholder=" Кв *">
+                        </div>
+                        <div class="_pay_data_wr"></div>
+                        <div class="_info_order_wr">
+                            <h3 class="_order_article_text">Оформление заказа</h3>
+                            <div class="_order_list_wr">
+                                <ol type="1" class="ord">
+                                    <li class="_order_list_item">
+                                        <span class="_order_item_name">Лавка без 
+                                            деревянных брусьев — Л 101
+                                        </span>
+                                        <div class="_order_item_num_wr">
+                                            <span class="_order_item_count">1 шт</span>
+                                            <span class="_order_item_price">
+                                            <strong>136 </strong>BYN
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <div class="separator"</div>
+                                    <li class="_order_list_item">
+                                        <span class="_order_item_name">Лавка без 
+                                            деревянных брусьев — Л 101 (под бронзу)
+                                        </span>
+                                        <span class="_order_item_count">1 шт</span>
+                                        <span class="_order_item_price">
+                                            <strong>163,20 </strong>BYN
+                                        </span>
+                                    </li>
+                                    <div class="separator"</div>
+                                </ol>
+                                <div class="_basket_total_price">
+                                    <div class="_basket_total_price_text_wr">
+                                        <span class="_total_price_text">Общая сумма заказа:</span>
+                                        <span class="_total_price_num">
+                                            <strong>224.70</strong> BYN
+                                        </span>
+                                    </div>
+                                    <div class="_order_btn_wr">
+                                        <input type="submit" class="_order_btn btn" value="оформить заказ" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="_item_product_count" >
-                            <span class="_item_product_price">136 BYN</span>
-                            <div class="_item_product_count_wr">
-                                <button class="_count_sym" id="decrement1">-</button>
-                                <span class="_count_number" id="_count_num1">1</span>
-                                <button class="_count_sym" id="increment1">+</button>
-                            </div>
-                            <span class="_other_price"><strong>136</strong> BYN</span>
-                            <button class="_btn_item_product_delete" id="delete_btn1">x</button>
-                        </div>
-                        
-                    </div>
+                    </form>
                     <div class="_basket_item_product" id="basket_item2">
                         <div class="_basket_item_product_wr">
                             <span class="_item_product_img_wr">
@@ -233,24 +262,7 @@
                             <button class="_btn_item_product_delete" id="delete_btn2">x</button>
                         </div>
                     </div>
-                    <div class="_basket_nav_element">
-                        <div class="_basket_back_href_wr">
-                            <a href="categories.html" class="_basket_back_href">
-                                вернуться к покупкам
-                            </a>
-                        </div>
-                        <div class="_basket_total_price">
-                            <div class="_basket_total_price_text_wr">
-                                <span class="_total_price_text">Общая сумма заказа:</span>
-                                <span class="_total_price_num">
-                                    <strong>224.70</strong> BYN
-                                </span>
-                            </div>
-                            <div class="_order_btn_wr">
-                                <a href="order.html" class="_order_btn btn">оформить заказ</a>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </section>
@@ -334,5 +346,5 @@
         </footer>
     </div>
 
-</body>
+<script type="text/javascript" src="bundle.js"></script></body>
 </html>

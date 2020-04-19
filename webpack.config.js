@@ -140,6 +140,10 @@ module.exports = {
 			filename: 'categories_product_item.html',
 			template: './categories_product_item.html'
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'order.html',
+			template: './order.html'
+		}),
 		new CleanWebpackPlugin()
 	]
 };
