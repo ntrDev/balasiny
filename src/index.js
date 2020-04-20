@@ -25,6 +25,24 @@ $(document).ready(function(){
         slidesToScroll: 1,
         responsive: [
             {
+                breakpoint: 1921,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 1,
+                    infinite: true
+                    // dots: true
+                }
+            },
+            {
+                breakpoint: 1621,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 2,
+                    infinite: true
+                    // dots: true
+                }
+            },
+            {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 5,
