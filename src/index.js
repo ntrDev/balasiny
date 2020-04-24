@@ -25,24 +25,6 @@ $(document).ready(function(){
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1921,
-                settings: {
-                    slidesToShow: 8,
-                    slidesToScroll: 1,
-                    infinite: true
-                    // dots: true
-                }
-            },
-            {
-                breakpoint: 1621,
-                settings: {
-                    slidesToShow: 6,
-                    slidesToScroll: 2,
-                    infinite: true
-                    // dots: true
-                }
-            },
-            {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 5,
@@ -77,9 +59,6 @@ $(document).ready(function(){
                 }
             }
             
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
     
@@ -100,7 +79,7 @@ $(document).ready(function(){
             $(".top_mnu li a").addClass("fadeInUp animated");
         };
     });
-
+    
 });
 
 window.addEventListener('load', function() {
@@ -157,80 +136,17 @@ window.addEventListener('load', function() {
 });
 
 
+var $slider = $("#slider_range");
+var $fill = $(".bar .fill");
+
+function setBar() {
+	$fill.css("width", $slider.val() + "%");
+}
+
+$slider.on("input", setBar);
+
+setBar();
 
 ////////////////// decrement & incremetn
 
 //// filter price 
-
-
-// let inputPrice = document.getElementById('input_price');
-// let priceValue = document.getElementById('_price_value');
-
-// priceValue.innerHTML = inputPrice.value;
-
-// inputPrice.oninput = function(){
-// 	priceValue.innerHTML = this.value;
-// }
-
-// inputPrice.addEventListener("mousemove",function(){
-//     let x = inputPrice.value;
-//     let color =`linear-gradient(90deg, rgb(128, 160, 93) ${x}%, rgba(229, 229, 229) ${x}%)`;
-//     // let color = 'linear-gradient(' + x + '%,rgba(229, 229, 229)' + x + '%)';
-//     // let color = 'linear-gradient(rgb(128, 160, 93)' + x + '%)';
-// 	inputPrice.style.background = color;
-// });
-
-// let start_value = input_price.getAttribute("value");
-
-// let x = start_value;
-// let color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '% , rgb(214, 214, 214)' + x + '%)';
-// input_price.style.background = color;
-
-// inputPrice.addEventListener("mousemove", function() {
-//     x = priceValue.value;
-//     color = 'linear-gradient(1deg, rgb(117, 252, 117)' + x + '% , rgb(214, 214, 214)' + x + '%)';
-//     inputPrice.style.background = color;
-// });
-
-
-// let range = document.getElementById('input_price');
-// let rangeValue = document.getElementById('_price_value');
-
-// rangeValue.innerHTML = range.value;
-
-// range.oninput = function(){
-// 	rangeValue.innerHTML = this.value;
-// }
-
-// let start_value = range.getAttribute('value');
-// // console.log(start_value);
-// let x = start_value;
-// let color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '1% , rgb(214, 214, 214)' + x + '0%)';
-// range.style.background = color;
-
-// range.addEventListener("mousemove", function() {
-//     x = range.value;
-//     color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '1% , rgb(214, 214, 214)' + x + '0%)';
-//     range.style.background = color;
-// });
-
-// var slid = document.getElementById("myRange");
-// var output = document.getElementById("value");
-
-// output.innerHTML = slid.value;
-
-// slid.oninput = function() {
-//     output.innerHTML = this.value;
-// }       
-
-// var start_value = slid.getAttribute("value");
-
-// var x = start_value;
-// var color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '% , rgb(214, 214, 214)' + x + '%)';
-// slid.style.background = color;
-
-// slid.addEventListener("mousemove", function() {
-//     x = slid.value;
-//     color = 'linear-gradient(90deg, rgb(117, 252, 117)' + x + '% , rgb(214, 214, 214)' + x + '%)';
-//     slid.style.background = color;
-// });

@@ -27,6 +27,7 @@ button:active{border: none;}
     --header-icon-color: #9D9D9D;
     --rose-color: #FFD19F;
     --order-input-border: #EDEEF4;
+    --red-color: #D5250F;
 }
 li,a{
     text-decoration: none;
@@ -639,6 +640,8 @@ button#slick-slide-control01::before,button#slick-slide-control02::before{
 ._gallery_item_6{background: url(../img/gallery_item/24.jpg)center center no-repeat;}
 ._gallery_item_7{background: url(../img/gallery_item/25.jpg)center center no-repeat;}
 ._gallery_item_8{background: url(../img/gallery_item/26.jpg)center center no-repeat;}
+._gallery_item_1,._gallery_item_2,._gallery_item_3,._gallery_item_4,
+._gallery_item_5,._gallery_item_6,._gallery_item_7,._gallery_item_8{background-size: cover;}
 button.slick-next.slick-arrow,button.slick-prev.slick-arrow{
     z-index: 1;
     left: 52.45%;
@@ -985,14 +988,19 @@ input[type=submit]:hover{
 }
 ._posts_img{
     display: block;
-    width: 98%;
+    width: 100%;
     height: 320px;
     background: url(../img/post_img_1.jpg)center center no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
 }
-.p_img_2{background: url(../img/post_img_2.jpg)center center no-repeat;}
+.p_img_2{
+    background: url(../img/post_img_2.jpg)center center no-repeat;
+    background-size: cover;
+}
 .popular_posts_items_wrapper{
     display: flex;
-    width: 50%;
+    width: 49%;
     flex-direction: column;
 }
 ._posts_text_wr{
@@ -1167,7 +1175,7 @@ input[type=submit]:hover{
 ._img_16{background: url(../img/services_item/item_16.jpg)center center no-repeat;}
 ._img_17{background: url(../img/services_item/item_17.jpg)center center no-repeat;}
 ._img_18{background: url(../img/services_item/item_18.jpg)center center no-repeat;}
-.img_1,._img_2,._img_3,._img_4,._img_5,._img_6,._img_7,._img_8,._img_9,
+._img_1,._img_2,._img_3,._img_4,._img_5,._img_6,._img_7,._img_8,._img_9,
 ._img_10,._img_11,._img_12,._img_13,._img_14,._img_15,._img_16,
 ._img_17,._img_18{background-size: cover;}
 a.circle{
@@ -1736,12 +1744,7 @@ input[type="submit"]._form_btn,._btn_catalog{
 	cursor: pointer;
 	border-radius: 50%;
 }
-.input_price .fill{
-    display: block;
-    width: 50%;
-    height: 100%;
-    background: rgb(128, 160, 93);
-}
+
 .input_price:hover{opacity:1;}
 .input_price::-webkit-slider-thumb{
     -webkit-appearance: none;
@@ -2249,7 +2252,6 @@ ol{padding-left: 19px;}
     font-size: 18px;
     line-height: 22px;
     color: var(--descr-color);
-    font-family: "AvenirNextCyr", sans-serif;
 }
 .more_info_data_wr,._pay_data_wr{
     display: flex;
@@ -2275,4 +2277,225 @@ ol{padding-left: 19px;}
     height: 49px;
 	background: url(../img/erip.png)center center no-repeat;
 	margin-top: 20px;
+}
+.product_item_wrapper .pay_choise_checkbox .checkmark{
+    width: 24px;
+    height: 24px;
+    background: var(--white-color);
+    border: 2px solid var(--separ-color);
+}
+.product_item_wrapper .pay_choise_checkbox .checkmark:after{
+    top: 34%;
+    left: 34%;
+    width: 0px;
+    height: 0px;
+}
+.search_wr{
+    position: absolute;
+    top: 61%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 0;
+    transition: 0.4s;
+    
+}
+.search_text{
+    border: none;
+    outline: none;
+    background: none;
+    width: 0px;
+    transition: 0.4s;
+    color: var(--white-color);
+    font-size: 14px;
+}
+a.icon-search:hover > .search_wr{
+    width: 240px;
+    background: var(--breadcums-color);
+    left: -6.5rem;
+}
+a.icon-search:hover > .search_text{
+    width: 240px;
+    padding: 0 6px;
+    transition: 0.4s;
+}
+.search_wr > input[type="text"]{
+    height: auto;
+    margin: 0;
+    width: 240px;
+    background: transparent;
+}
+._product_item_wrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.product_item_img_wr{
+    display: flex;
+    width: 41%;
+    flex-direction: column;
+}
+._product_item_img_bg_wr{
+    display: flex;
+    height: 734px;
+    align-items: center;
+}
+._product_item_img_bg{
+    display: flex;
+    width: 523px;
+    height: 458px;
+    background: url(../img/bg-bench.png)center center no-repeat;
+    background-size: cover;
+}
+.product_item_wrapper{
+    display: flex;
+    width: 53%;
+    flex-direction: column;
+}
+.product_item_name,.product_item_price{
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--black-color);
+}
+.product_item_have{margin: 32px 0 16px 0;}
+.product_item_have,.product_item_code,.product_item_text{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--green-color);
+}
+.product_item_code{color: var(--breadcrums-color);}
+.product_item_price{
+    font-family: 'AvenirNextCyrBold',sans-serif;
+    color: var(--red-color);
+    margin: 32px 0 40px 0;
+}
+._pay_person_choise_wr ._pay_person_choise_,._pay_person_choise_wr,
+.pay_choise_checkbox{width: 100%;}
+._pay_person_choise_wr{
+    display: flex;
+    flex-wrap: wrap;
+}
+._pay_person_choise_wr ._pay_person_choise_{margin-bottom: 16px;}
+.pay_choise_checkbox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 43px;
+    font-family: "AvenirNextCyr", sans-serif;
+}
+._pay_person_choise_wr ._pay_person_choise_ span{
+    color: var(--green-color);
+    margin-left: 1%;
+    font-family: "AvenirNextCyr", sans-serif;
+}
+._pay_person_choise_wr ._pay_person_choise_ span:nth-last-of-type(2){margin-left: 3%;}
+.pay_choise_checkbox,._pay_person_choise_wr ._pay_person_choise_,
+._pay_person_choise_wr ._pay_person_choise_ span{
+    font-size: 18px;
+    line-height: 22px;
+}
+.product_item_text,._pay_person_choise_wr ._pay_person_choise_{
+    color: var(--black-color);
+}
+.product_item_text{margin: 65px 0 40px 0;}
+.product_item_btn_wr{
+    display: flex;
+    
+}
+.product_item_btn_wr{
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 64px;
+}
+.product_item_btn_wr ._order_btn_wr,._item_product_count_wr{margin : 0;}
+.product_item_props,.product_item_value{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--descr-color);
+}
+.product_item_props > .product_item_value{color: var(--green-color);}
+.product_list_item_info li{margin: 28px 0;}
+.product_item_img_other_wr{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+._product_item_img_other_1,._product_item_img_other_2,._product_item_img_other_3{
+    width: 164px;
+    height: 200px;
+}
+._product_item_img_other_1{background: url(../img/bench_green.jpg)center center no-repeat;}
+._product_item_img_other_2{background: url(../img/bench_left.jpg)center center no-repeat;}
+._product_item_img_other_3{background: url(../img/bench_right.jpg)center center no-repeat;}
+._product_item_img_other_1,._product_item_img_other_2,._product_item_img_other_3{
+    background-size: cover;
+}
+._filter_info_wrap{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--grown-color);
+    align-items: center;
+    margin-bottom: 32px;
+}
+._filter_info_wrap > a{color: var(--grown-color);}
+._catalog_filter_name{
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+
+
+.slider_container {
+    position: relative;
+    width: 100%;
+}
+.slider_container  .bar {
+	position: absolute;
+	z-index: 1;
+	left: 15px;
+	right: 5px;
+	top: 7px;
+	height: 4px;
+	border-radius: 5px;
+	background-color: #5c5c5c;
+	overflow: hidden;
+}
+.slider_container .bar .fill {
+	display: block;
+	width: 0;
+	height: 100%;
+	background-color: var(--green-color);
+}
+.slider_container ._slider_range {
+	position: relative;
+	z-index: 2;
+	-webkit-appearance: none;
+	margin: 0;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+	outline: none;
+	background-color: transparent;
+}
+.slider_container ._slider_range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 8px;
+	height: 8px;
+	background-color: var(--black-color);
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	transition: .3s ease-in-out;
 }
