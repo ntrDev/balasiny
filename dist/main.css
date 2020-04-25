@@ -2892,7 +2892,87 @@ a.icon-search:hover > .search_text{
 	outline: none;
 	transition: .3s ease-in-out;
 }
+#banner button.slick-prev.slick-arrow{
+    width: 40px;
+    height: 80px;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    left: 0;
+    background: yellow;
+    top: 38%
+}
+#banner button.slick-next.slick-arrow{
+    width: 40px;
+    height: 80px;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    background: yellow;
+    left: 97%;
+    top: 45%;
 
+}
+
+#banner button.slick-prev.slick-arrow:before{
+    content: '←';
+}
+._window_basket_{
+    position: absolute;
+    width: 308px;
+    height: 274px;
+    background: var(--white-color);
+    border: 2px solid var(--yellow-color);
+    box-sizing: border-box;
+    right: 0%;
+    top: 3.5rem;
+    z-index: 2;
+    padding: 18px 13px 16px 9px;
+}
+._window_basket_ ._basket_item_product{
+    padding: 0;
+    border: none;
+}
+._window_basket_ ._basket_item_product_wr{
+    width: 100%;
+    
+}
+._window_basket_ ._item_product_img_wr{
+    width: 56px;
+    height: 56px;
+    padding: 8px 5px 6px 4px;
+}
+._window_basket_ ._item_product_img{
+    width: 47px;
+    height: 42px;
+    background: url(27e9aa670066b58f28ade3652ff69d21.png)center center no-repeat;
+    background-size: cover;
+}
+._window_basket_ ._item_product_wr {
+    width: 59.75%;
+    margin: 0 20px 0 14px;
+}
+._window_basket_ ._basket_item_product_wr ._item_product_name{
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--black-color);
+}
+._window_basket_ ._basket_item_product_wr ._item_product_price{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 0;
+    color: var(--header-icon-color);
+    margin-top: 13px;
+}
+
+
+._window_basket_ ._btn_item_product_delete{
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    color: var(--header-icon-color);
+    border: 1px solid var(--header-icon-color);
+    box-sizing: border-box;
+    font-size: 12px;
+    margin-left: 0;
+}
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
