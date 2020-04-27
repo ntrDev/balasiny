@@ -1,0 +1,17 @@
+
+.ic_basket:before { content: '\e80c'; } /* '' */
+.ic_customer-service:before { content: '\e80d'; } /* '' */
+.ic_email:before { content: '\e80e'; } /* '' */
+.ic_delivery:before { content: '\e80f'; } /* '' */
+.ic_instagram:before { content: '\e810'; } /* '' */
+.ic_facebook:before { content: '\e811'; } /* '' */
+.ic_left_arrow:before { content: '\e812'; } /* '' */
+.ic_map:before { content: '\e813'; } /* '' */
+.ic_odnoklassniki:before { content: '\e814'; } /* '' */
+.ic_phone:before { content: '\e815'; } /* '' */
+.ic_right_arrow:before { content: '\e816'; } /* '' */
+.ic_star:before { content: '\e817'; } /* '' */
+.ic_vk:before { content: '\e818'; } /* '' */
+.ic_youtube:before { content: '\e819'; } /* '' */
+.ic_right:before { content: '\e81a'; } /* '' */
+.ic_search:before { content: '\e81b'; } /* '' */

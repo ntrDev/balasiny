@@ -1,6 +1,6 @@
 import * as $ from 'jquery';
 import 'slick-carousel';
-import './css/custom_icons/css/balysiny_fonts.css';
+import './css/custom_icons/css/balysiny_icon.css';
 import './css/style.css';
 import './css/media.css';
 import '../node_modules/slick-carousel/slick/slick-theme.css';

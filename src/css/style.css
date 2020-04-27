@@ -164,7 +164,7 @@ a.icon-basket:hover,a.icon-search:hover{
     transition: 0.3s all ease-in-out;
     color: var(--green-color);
 }
-a.search{background: url(../img/icons/search.svg)center center no-repeat;}
+/* a.search{background: url(../img/icons/search.svg)center center no-repeat;} */
 ._count_product{
     display: flex;
     width: 16px;
@@ -195,15 +195,16 @@ header .email_wrapp, header .city_info_wrapp,header .phone_wrapp{
     width: 100%;
 }
 .banner_wrapper{
-    display: flex;
-    width: 100%;
     height: 642px;
     background: url(../img/banner.jpg)no-repeat center center;
     background-size: cover;
 }
-._banner_info{
+._banner_info,.banner_wrapper{
     display: flex;
     width: 100%;
+}
+.banner_info_text_wr{
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 248px;
@@ -695,7 +696,7 @@ footer{
     padding-bottom: 33px;
 }
 .ic_email,.ic_address,.ic_phone{
-    background: url(../img/icons/email.svg)center center no-repeat;
+    /* background: url(../img/icons/email.svg)center center no-repeat; */
     width: 23px;
     height: 20px;
     margin-right: 9px;
@@ -704,8 +705,8 @@ footer{
     font-size: 16px;
     line-height: 20px;
 }
-.ic_address{background: url(../img/icons/map.svg)center center no-repeat;}
-.ic_phone{background: url(../img/icons/phone.svg)center center no-repeat;}
+/* .ic_address{background: url(../img/icons/map.svg)center center no-repeat;}
+.ic_phone{background: url(../img/icons/phone.svg)center center no-repeat;} */
 .number_wrapp{
     display: flex;
     width: 100%;
@@ -715,7 +716,7 @@ footer{
 }
 .social_icons,.breadcrums_wrapper{display: flex;}
 .social_icons>a{
-    background: url(../img/icons/Group.svg)no-repeat;
+    /* background: url(../img/icons/Group.svg)no-repeat; */
     transition: all 0.2s ease-out;
     width: 32px;
     height: 32px;
@@ -1418,22 +1419,22 @@ p._partners_text_wr{
     display: flex;
     width: 40px;
     height: 35px;
-    background: url(../img/icons/email_bg.svg)center center no-repeat;
+    /* background: url(../img/icons/email_bg.svg)center center no-repeat; */
     margin-bottom: 27.31px;
 }
 ._contacts_ic_phone{
     display: flex;
     width: 40px;
     height: 40px;
-    background: url(../img/icons/phone_bg.svg)center center no-repeat;
+    /* background: url(../img/icons/phone_bg.svg)center center no-repeat; */
     margin: 32px 0 19px 0;
 }
 ._contacts_ic_marker{
     display: flex;
     width: 32px;
     height: 40px;
-    background: url(../img/icons/pin.svg)center center no-repeat;
-    margin-bottom: 22px;
+    /* background: url(../img/icons/pin.svg)center center no-repeat;
+    margin-bottom: 22px; */
 }
 ._contacts_form_wrapp{
     display: flex;
