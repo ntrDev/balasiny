@@ -86,16 +86,7 @@ window.addEventListener('load', function() {
     console.log('All assets are loaded');
 
 
-    function initMap() {
-        let map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 10,
-            center: {lat: -33.9, lng: 151.2}
-        });
     
-        setMarkers(map);
-        /// Gogle Maps 
-
-    }
 
     let number1 = 1;
     let number2 = 1;
